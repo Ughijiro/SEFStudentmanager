@@ -36,6 +36,10 @@ public class Student {
                 Objects.equals(lastName, student.lastName);
     }
 
+    public String getDetails(){
+        return "Student Details:" +  this.firstName + " " + this.lastName + " " + this.age + " " + this.meanGrade;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName, age, meanGrade);
